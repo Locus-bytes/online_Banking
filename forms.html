@@ -1,0 +1,393 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styleForm.css">
+</head>
+<body>
+    
+ <div class="container" id="signup">
+    <h1 class="form-title">Sign up</h1>
+    <form method="post" action="">
+    <div class="input-group">
+        <i class="fa fa-user"></i>
+            <label>First Name</label>
+            <input type="text" name="fname"  required autofocus="">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-user"></i>
+        <label>Last Name</label>
+        <input type="text" name="lname"  required autofocus="">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-calendar"></i>
+        <label>Date Of birth</label>
+        <input type="date" name="dob">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-key"></i>
+        <label>Account Number</label>
+        <input type="text" name="accnum" required autofocus=""> 
+    </div>
+    <div class="input-group">
+    <i class="fa fa-user"></i>
+    <label>Username</label>
+    <input type="text" name="username" required autofocus="">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-envelope"></i>
+        <label>E-mail</label>
+        <input type="email" name="email" required autofocus="">
+    </div>
+    <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <label>Password</label>
+        <input type="password" name="password" required autofocus="">
+    </div>
+    <button type="button" class="button" name="submit" >Sign Up</button>
+</form>
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-google"></i>
+</div>
+<div  class="links">
+    <p>
+    <a href="#">
+       Already have an account? 
+    </a>
+</p>
+    <button type="button" id="signInbutton">Sign In</button>
+</div>
+</div>
+<div class="container" id="signin">
+    <h1 class="form-title">Sign In</h1>
+    <form method="post" action="">
+    
+    <div class="input-group">
+    
+    <i class="fa fa-user"></i>
+    <label>Username: </label>
+    <input type="text" name="username" required autofocus="">
+    
+    <div class="input-group">
+        <i class="fa fa-lock"></i>
+        <label>Password: </label>
+        <input type="password" name="password">
+        <span class="eye-icon"><i class="fa fa-eye" aria-hidden="true"></i></span>
+    </div>
+    <p class="recover">
+        <a href="#">Forget Password?</a>
+    </p>
+    <button type="button" class="button" name="submit">Sign In</button>
+
+<div class="icons">
+    <i class="fa fa-facebook"></i>
+    <i class="fa fa-google"></i>
+</div>
+<div  class="links">
+    <p class="createAccount">
+        <a href="#">Don't Have An Account?</a>
+    </p>
+    <button type="button" id="signUpbutton">Sign Up</button>
+</div>
+ </div>  
+ </form> 
+ </div>
+ <script src="form.js"></script>
+ </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CREATE ACCOUNT & LOGIN</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+  
+  <div class="container" id="signin">
+    <h1 class="form-title">Login</h1>
+    <form id="loginForm" method="post" action="">
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="text" email="email" id="email" placeholder="Enter Email" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" password="password" id="password" placeholder="Enter Password" required>
+        </div>
+        <a href="#">Forget Password?</a>
+        <p><input type="submit" class="btn" value="Sign In" name="sign in"></p>
+    </form>
+    <div class="social-login">
+        <button class="btn-social btn-google">
+            <i class="fab fa-google"></i> Sign in with Google
+        </button>
+        <button class="btn-social btn-facebook">
+            <i class="fab fa-facebook"></i> Sign in with Facebook
+        </button>
+    </div>
+    <div class="links">
+        <p>Don't have an account yet?</p>
+        <button id="SignUpButton">Sign Up</button>
+    </div>
+  </div>
+  
+  <div class="container" id="signup" style="display: none;">
+    <h1 class="form-title">Sign Up</h1>
+    <form id="signupForm" method="post" action="">
+        <div class="input-group">
+            <i class="fas fa-bank"></i>
+            <input type="text" id="signup-email" placeholder="Branch" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input type="text" id="account num" placeholder="Account Number" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-envelope"></i>
+            <input type="text" id="signup-email" placeholder="Enter Email" required>
+        </div>
+        <div class="input-group">
+              <i class="fas fa-lock"></i>
+              <input type="password" id="signup-password" placeholder="Enter Password" required>
+        </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="confirm-password" placeholder="Confirm Password" required>
+        </div>
+        <p><input type="submit" class="btn" value="Sign Up" name="sign up"></p>
+    </form>
+
+    <div class="links">
+        <p>Already have an account?</p>
+        <button id="SignInButton">Sign In</button>
+    </div>
+  </div>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fcfcfc;
+  background: linear-gradient(to right, #c7bebe, #e4d9d9);
+  background-image: url(images/forex.jpg);
+  background-size: contain;
+}
+
+.container {
+  background:#dbcfcf;
+  width: 450px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.9);
+}
+
+.form-title {
+    font-size:1.5rem;
+    font-weight:bold;
+    text-align:center;
+    padding:1.3rem;
+    color: rgb(71, 105, 159);
+    font-weight: 1000px;
+    font-size : 30px;
+  /* font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 1.3rem;
+  margin-bottom: 0.4rem; */
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group i {
+  position: absolute;
+  left: 1.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem 1.5rem;
+  padding-left: 3rem;
+  border: none;
+  border-bottom: 1px solid #757575;
+  font-size: 15px;
+  background: transparent;
+  color: inherit;
+}
+
+input::placeholder {
+  color: #000000;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 2px solid hsl(0, 0%, 57%);
+}
+
+label {
+  position: absolute;
+  left: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #757575;
+  pointer-events: none;
+  transition: 0.2s ease all;
+}
+
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+  top: -1.5em;
+  left: 1.5rem;
+  font-size: 12px;
+  color: rgb(19, 18, 18);
+}
+
+.btn {
+  font-size: 1rem;
+  padding: 0.8rem 0;
+  border: none;
+  border-radius: 3px;
+  width: 100%;
+  background-color: rgb(65, 97, 123);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.5s;
+  font-weight:bold;
+  font-size:1.1rem;
+}
+
+.btn:hover {
+  /* background: #8b7f7f; */
+  background-color:rgb(71, 105, 159);
+    color:blue;
+    
+    
+}
+
+a {
+  display: block;
+  text-align: right;
+  font-size: 1rem;
+  color: rgb(125, 125, 235);
+  text-decoration: none;
+  margin-bottom: 1rem;
+}
+
+a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.social-login {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 3px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-social i {
+  margin-right: 0.5rem;
+}
+
+.btn-google {
+  background-color: #bb2518;
+  color: #fff;
+}
+
+.btn-google:hover {
+  background-color: #ff7461;
+}
+
+.btn-facebook {
+  background-color: #4a6eda;
+  color: #fff;
+}
+
+.btn-facebook:hover {
+  background-color: #2d4373;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0 4rem;
+  margin: 1rem;
+  font-weight: bold;
+}
+
+button {
+  color: rgb(125, 125, 235);
+  border: none;
+  background-color: transparent;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+button:hover {
+  text-decoration: underline;
+  color: blue;
+}
+</style>
+
+
+
+
+
+
+
+  <script>
+    // JavaScript for toggling between forms
+    document.getElementById('SignUpButton').addEventListener('click', function() {
+      document.getElementById('signin').style.display = 'none';
+      document.getElementById('signup').style.display = 'block';
+    });
+
+    document.getElementById('SignInButton').addEventListener('click', function() {
+      document.getElementById('signin').style.display = 'block';
+      document.getElementById('signup').style.display = 'none';
+    });
+
+    // Form validation
+    document.getElementById('signupForm').addEventListener('submit', function(event) {
+      const password = document.getElementById('signup-password').value;
+      const confirmPassword = document.getElementById('confirm-password').value;
+      
+      if (password !== confirmPassword) {
+        alert('Passwords do not match!');
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
