@@ -54,7 +54,6 @@ main .user_actions {
   height: 100vh;
   padding: 7rem 2rem 2rem 2rem;
 }
-
 .user_actions .text {
   display: flex;
   align-items: start;
@@ -163,7 +162,6 @@ main .account_details .box {
 .account_details #withdraw {
   border-bottom: 5px solid #ffe600;
 }
-
 main .account_details .box:hover {
   box-shadow: none;
   background: #433cf6;
